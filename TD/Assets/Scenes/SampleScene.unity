@@ -187,7 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 244507671}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -308,7 +308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: []
   tile: {fileID: 1343980570358916, guid: fa3b79c3684be3a41be0b8ed4b2c4fc2, type: 2}
-  t: {fileID: 244507670}
+  gridParent: {fileID: 244507670}
   gridXSize: 16
   gridZSize: 16
 --- !u!4 &951351108
