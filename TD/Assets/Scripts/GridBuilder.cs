@@ -6,7 +6,7 @@ public class GridBuilder : MonoBehaviour
 {
   public List<GameObject> grid;
   public GameObject tile;
-  public GameObject t;
+  public GameObject gridParent;
   public int gridXSize;
   public int gridZSize;
 
@@ -34,8 +34,9 @@ public class GridBuilder : MonoBehaviour
         tileXPosition.x += 1;
         grid.Add(tile);
 
-        Instantiate(grid[i], new Vector3(tileXPosition.x, 0, tileZPosition.z), Quaternion.identity, t.gameObject.transform);
+        Instantiate(grid[i], new Vector3(tileXPosition.x, 0, tileZPosition.z), Quaternion.identity, gridParent.gameObject.transform);
       }
+
       tileZPosition.z += 1;
       tileXPosition.x = 0;
     }
